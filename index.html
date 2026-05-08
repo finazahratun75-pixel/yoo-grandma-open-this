@@ -1,0 +1,67 @@
+<html lang="id">
+      border: none;
+      border-radius: 30px;
+      background: #ff4d6d;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    .hidden {
+      display: none;
+      margin-top: 20px;
+      font-size: 20px;
+      color: #ff4d6d;
+      font-weight: bold;
+    }
+
+    @keyframes muncul {
+      from {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <h1>Happy Birthday 🎉</h1>
+
+    <p>
+      Hello my dear lovely friend 💖<br><br>
+      Happy Birth day! today ur turning 22
+      "You know dear, actually I’m not that good with words, but there is something I really want to tell you in this letter. I want you to know how much I admire you. You are such an incredibly strong person—stronger than you even realize. I’ve seen how you face every challenge with so much courage, and it truly inspires me. So, I want to say that I’m so proud of you.
+And please remember, sometimes you don’t have to carry everything on your own. You have me to talk to. I might not be able to ease your pain or solve your problems, but I can definitely be a good listener for you.
+Being here with you makes me realize how lucky I am to have a friend like you.
+Happy Birthday, my dearest Olga Hapsominataf. I just want you to know that I'll always support you."✨
+    </p>
+
+    <button onclick="munculPesan()">
+      Klik Dong 👀
+    </button>
+
+    <div class="hidden" id="pesan">
+      "Thank you for being my friend. Even though we might have our own paths to follow later on, let’s keep doing our best for now. I’ll always be here to support you, no matter where we end up. 🌷
+    </div>
+  </div>
+
+  <script>
+    function munculPesan() {
+      document.getElementById("pesan").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
